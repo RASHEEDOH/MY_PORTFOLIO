@@ -1,0 +1,166 @@
+/* === Base Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive, sans-serif;
+    background: linear-gradient(135deg, #1e1e2f, #3a1c71);
+    color: #f0f0f0;
+    padding: 30px;
+}
+
+/* === Headings === */
+h1, h2 {
+    font-family: 'Baloo 2', cursive;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffda77;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2em;
+    color: #fddb92;
+}
+
+/* === Paragraphs === */
+p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    color: #ffffffcc;
+    text-align: center;
+}
+
+/* === About Section === */
+.About {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 2px dashed #f0a500;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 218, 119, 0.2);
+    text-align: center;
+}
+
+.About img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 25px;
+    margin: 20px 0;
+    border: 5px solid #ffb347;
+}
+
+/* === Skills Section === */
+.skills ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills li {
+    background-color: #f0a500;
+    color: #1e1e2f;
+    padding: 12px 18px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.skills li:hover {
+    transform: scale(1.1);
+    background-color: #ffda77;
+}
+
+/* === Projects === */
+article {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(253, 219, 146, 0.2);
+}
+
+.project, .onepiece, .contest {
+    margin-bottom: 40px;
+}
+
+video {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 20px;
+    margin: 20px auto;
+    display: block;
+    border: 4px solid #f0a500;
+}
+
+/* === Buttons === */
+button {
+    display: block;
+    margin: 30px auto;
+    background-color: #ffb347;
+    color: #1e1e2f;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #fddb92;
+    transform: scale(1.05);
+}
+
+/* === Footer === */
+footer {
+    margin-top: 50px;
+    text-align: center;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+    filter: brightness(1.2);
+}
+
+/* === Responsive Design === */
+@media screen and (max-width: 768px) {
+    .skills ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    h2 {
+        font-size: 1.6em;
+    }
+
+    button {
+        width: 80%;
+    }
+}
