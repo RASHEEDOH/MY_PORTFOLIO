@@ -3,33 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="website icon"tvpe="jpg" href="../Images/Rashid_Mugi PASSPORT PIC.jpg">
     <link rel="stylesheet" href="style.css">
     <title>My Portfolio</title>
 </head>
 <body>
-    <section>
+    <div class="container">
+    <!--About myself content-->
     <h1>Welcome to My Portfolio</h1>
-    <img src="../Images/Rashid_Mugi PASSPORT PIC.jpg" alt="passport pic" style="width: 200px; height: 200px; border-radius: 50%; border: 2px solid #fddb92;">
-    <p>Hi &#128075;, I'm Rashid, nice to meet you! 😊</p>
-    <p>I am a self-taught artist 🎨, software developer 💻, and avid learner of Cybersecurity 🔒.</p>
-    <p>Get to know me &#128521;!  See my work below! 👇</p>
-    <a href="Software_dev.html"><button class="Software_dev" href="">SOFTWARE DEVELOPMENT PORTFOLIO</button></a>
-    <a href="art.html"><button class="Artist">ARTIST PORTFOLIO</button></a>
-    </section>
+    
+    <img src="../Images/Rashid_Mugi PASSPORT PIC.jpg" alt="passport pic" style="width: 200px; height: 200px; border-radius: 50%; border: 3px solid #E6E6FA;">
+    <div class="aboutme">
+        <h2>About Me</h2>
+        <p>Hi my name is Rashid Mugi.I am a self taught artist and software developer with a 
+            keen interest in developing and innovative projects and solutions.In this portfolio I 
+            wish to share with you and the world some of my interests and experiences gained
+        </p>
+        <p>Please take a look at my CV  and portfolio below to get to know me</p>
+    </div>
+    
+    <!--Relevant links to get to know me-->
+    <div class="links">
+        <a href="../docs/Rashid_Mugi_CV.pdf" download><button>Download My CV</button></a>
+        <a href="Software_dev.html"><button class="Software_dev" href="">SOFTWARE DEVELOPMENT PORTFOLIO</button></a>
+        <a href="art.html"><button class="Artist">ARTIST PORTFOLIO</button></a>        
+    </div>
 
-    <footer>
-        <h2>Contact Me</h2>
+    <!--this is the footer content-->
+    <div class="footer_links">
+         <h2>Contact Me</h2>
         <a href="https://www.instagram.com/rashiddraws/" target="_blank">
-            <img src="../Images/instagram.png" alt="Instagram">
+            <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="https://www.linkedin.com/in/rashid-mugi-04b634298/" target="_blank">
-            <img src="../Images/linkedin.png" alt="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
         </a>
         <a href="https://github.com/RASHEEDOH" target="_blank">
-            <img src="../Images/github.png" alt="GitHub">
+            <i class="fa-brands fa-github"></i>
         </a>
-    </footer>
+    </div>
+
+</div>
+
     
 </body>
 </html>

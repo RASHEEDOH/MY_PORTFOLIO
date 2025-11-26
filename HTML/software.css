@@ -1,6 +1,8 @@
+* {
+     font-family: 'Comic Neue', cursive, sans-serif;
+}
 body {
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #3a1c71);
     flex-direction: column;
     align-items: center;
@@ -9,9 +11,8 @@ body {
 }
 
 h1, h2, h3 {
-    font-family: 'Baloo 2', cursive;
     text-align: center;
-    color: #ffda77;
+    color: #E6E6FA;
     margin-bottom: 20px;
 }
 
@@ -21,7 +22,7 @@ h1 {
 
 h2 {
     font-size: 2em;
-    color: #ffda77;
+    color: #E6E6FA;
 }
 
 h3 {
@@ -30,7 +31,6 @@ h3 {
 }
 
 p {
-    font-family: 'Baloo 2', cursive;
     font-size: 1.1em;
     line-height: 1.6;
     color: #e0e0f0;
@@ -40,10 +40,10 @@ p {
 .about {
     max-width: 1200px;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 10px;
     margin: 40px 0;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-left: 180px;
+    border: 1px solid #E6E6FA;
 }
 
 .background {
@@ -75,27 +75,27 @@ p {
 }
 
 .skills ul li, .cybersec ul li {
-    font-family: 'Baloo 2', cursive;
-    background-color: #ffda77;
-    color: #1e1e2f;
+    background-color: rgba(42, 63, 92, 0.3);
+    color: #e0e0f0;
     padding: 10px 15px;
     border-radius: 5px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 1px solid #E6E6FA;
     transition: background-color 0.3s ease;
 }
 
 .skills ul li:hover, .cybersec ul li:hover {
-    background-color: rgba(42, 63, 92, 0.3);
-    color: #e0e0f0;
+    background-color: #ffda77;
+    color: #1e1e2f;
+    border: none;
 }
 
 article {
     max-width: 1000px;
     padding: 20px;
     margin-bottom: 40px;
-    background-color: rgba(255, 255, 255, 0.04);
+    margin-left: 280px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid #E6E6FA;
 }
 
 .project {
@@ -124,27 +124,33 @@ button {
 button:hover {
     background-color: #ffda77; /* lighter on hover */
 }
-
-footer {
+/*footer_links code*/
+.footer_links {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, #1a1f3c, #2a2f5c);
     gap: 15px;
-    padding: 20px;
+    padding: 10px;
 }
 
-footer img {
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
+.footer_links i {
+    font-size: 30px;
+    color: #E6E6FA;
+    transition: 0.3s;
 }
 
-footer img:hover {
-    transform: scale(1.1);
+.footer_links i:hover {
+    color: #ffda77;
 }
+.footer_links h2{
+    font-size: 25px;
+    color: #E6E6FA;
+}
+.footer_links h2:hover{
+    color:#ffda77;
+}
+
 
 @media (max-width: 768px) {
     .skills ul, .cybersec ul {

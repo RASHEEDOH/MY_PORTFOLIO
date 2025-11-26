@@ -1,16 +1,22 @@
+/*code for making sure font remains the same across every application */
+* {
+     font-family: 'Comic Neue', cursive, sans-serif;
+}
+
 body {
     margin-top: 100px;
     background: linear-gradient(135deg, #1e1e2f, #3a1c71);
     color: #f0f0f0; 
-    background-position: center center; 
+    background-position: center center;
+    overflow-y:auto; 
 }
 
-section {
-    display: flex;
+.container {
+    display:flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #fddb92;
+    border: 2px solid #E6E6FA;
     border-radius: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     padding: 20px;
@@ -19,40 +25,45 @@ section {
     backdrop-filter: blur(15px); /* Add blur to the background */
 }
 
+.aboutme {
+    padding: 10px;
+    border-radius: 15px;
+    border: 1px solid #E6E6FA;
+    margin-top: 30px;
+    text-align:center;
+}
+
 h1 {
-    color: #ffda77;
-    font-family: 'Baloo 2', cursive;
+    color: #E6E6FA;
     font-size: 45px;  
 }
 
 h2 {
-    color: #ffda77;
-    font-family: 'Baloo 2', cursive;
+    color:#E6E6FA;
     font-size: 25px;  
+    align-items: center;
 }
 
 p{
     color: #e0e0f0;
-    font-family: 'Baloo 2', cursive;
-    font-size: 20px;  
+    font-size: 20px; 
+    align-items: center; 
 }
 
 button{
-    background-color: rgb(17, 2, 92);
+    background-color: rgba(42, 63, 92, 0.3);
     margin-top: 20px;
-    color: #ffda77;
-    font-family: 'Comic Neue', cursive, sans-serif;
+    color: #E6E6FA;
     font-size: 20px;  
     border-radius: 10px;
-    border: none;
+    border: 1px solid #E6E6FA;
     padding: 10px 20px;
     cursor: pointer;
 }
 
 button:hover{
     background-color:#ffda77;
-    color: white;
-    font-family: 'Comic Neue', cursive, sans-serif;
+    color:#1e1e2f;
     font-size: 20px;  
     border-radius: 10px;
     border: none;
@@ -73,23 +84,25 @@ button:hover::after{
     background: rgb(198, 78, 224);
 }
 
-footer {
+/*footer_links code*/
+.footer_links {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to top, #1a1f3c, #2a2f5c);
     gap: 15px;
     padding: 20px;
 }
 
-footer img {
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    transition: transform 0.3s ease;
+.footer_links i {
+    font-size: 30px;
+    color: #E6E6FA;
+    transition: 0.3s;
 }
 
-footer img:hover {
-    transform: scale(1.1);
+.footer_links i:hover {
+    color: #ffda77;
+}
+.footer_links h2:hover{
+    color:#ffda77;
 }
