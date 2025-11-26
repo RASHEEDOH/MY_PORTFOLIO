@@ -31,6 +31,12 @@ p {
     color: #e0e0f0;
     margin-bottom: 16px;
 }
+ul{
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #e0e0f0;
+    margin-bottom: 16px;
+}
 
 /* About wrapper */
 .about {
