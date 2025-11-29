@@ -1,41 +1,31 @@
 /* === Base Styles === */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-family: 'Comic Neue', cursive, sans-serif;
 }
 
 body {
-    font-family: 'Comic Neue', cursive, sans-serif;
     background: linear-gradient(135deg, #1e1e2f, #3a1c71);
     color: #f0f0f0;
     padding: 30px;
 }
 
-/* === Headings === */
-h1, h2 {
-    font-family: 'Baloo 2', cursive;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #ffda77;
-}
-
 h1 {
     font-size: 2.8em;
+    text-align: center;
 }
 
 h2 {
     font-size: 2em;
-    color: #fddb92;
+    color: #E6E6FA;
 }
 
 /* === Paragraphs === */
 p {
-    font-size: 1.1em;
+    font-size: 20px;
     line-height: 1.8;
     margin-bottom: 12px;
     color: #ffffffcc;
-    text-align: center;
+    text-align:left;
 }
 
 /* === About Section === */
@@ -43,10 +33,9 @@ p {
     max-width: 1000px;
     margin: 40px auto;
     background-color: rgba(255, 255, 255, 0.05);
-    border: 2px dashed #f0a500;
+    border: 3px dashed #E6E6FA;;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 0 25px rgba(255, 218, 119, 0.2);
     text-align: center;
 }
 
@@ -56,7 +45,16 @@ p {
     height: auto;
     border-radius: 25px;
     margin: 20px 0;
-    border: 5px solid #ffb347;
+    border: 5px solid #E6E6FA;;
+}
+About h2{
+    text-align: left;
+    margin-bottom: 20px;
+    color: #E6E6FA;
+}
+
+.About p{
+    text-align:left;
 }
 
 /* === Skills Section === */
@@ -70,17 +68,20 @@ p {
 }
 
 .skills li {
-    background-color: #f0a500;
-    color: #1e1e2f;
+     background-color: rgba(42, 63, 92, 0.3);
+    color: #e0e0f0;
     padding: 12px 18px;
-    border-radius: 20px;
+    font-size: 25px;
+    border-radius: 10px;
     font-weight: bold;
     transition: transform 0.2s ease;
+    border: 1px solid #e0e0f0;
 }
 
 .skills li:hover {
-    transform: scale(1.1);
     background-color: #ffda77;
+    color: #1e1e2f;
+    border: none;
 }
 
 /* === Projects === */
@@ -88,9 +89,8 @@ article {
     max-width: 1000px;
     margin: 50px auto;
     padding: 20px;
-    background-color: rgba(255, 255, 255, 0.05);
     border-radius: 15px;
-    box-shadow: 0 0 20px rgba(253, 219, 146, 0.2);
+    border: 2px solid #e0e0f0;
 }
 
 .project, .onepiece, .contest {
@@ -99,26 +99,36 @@ article {
 
 video {
     width: 100%;
-    max-width: 700px;
-    border-radius: 20px;
-    margin: 20px auto;
+    max-height: 400px;
+    border-radius: 10px;
+    border-radius: 10px;
+    margin: 10px auto;
     display: block;
-    border: 4px solid #f0a500;
+    border: 1px solid #e0e0f0;
 }
 
 /* === Buttons === */
-button {
-    display: block;
+.back-btn {
     margin: 30px auto;
-    background-color: #ffb347;
-    color: #1e1e2f;
+    background-color: #2a2f5c;
+    color: white;
     font-size: 1.1em;
-    font-weight: bold;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 20px;
+    padding: 12px 12px;
+    border-radius: 10px;
     cursor: pointer;
+    text-decoration: none;   /* ← removes underline */
+    text-align: center;
     transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #fddb92;
+    color: #1e1e2f;
+    transform: scale(1.05);
+}
+
+a button {
+    text-decoration: none;
 }
 
 button:hover {
@@ -127,23 +137,35 @@ button:hover {
 }
 
 /* === Footer === */
-footer {
-    margin-top: 50px;
-    text-align: center;
+/* Footer */
+.footer_links {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
 }
 
-footer img {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    border-radius: 50%;
-    transition: transform 0.3s ease, filter 0.3s ease;
+.footer_links i {
+    font-size: 30px;
+    color: #E6E6FA;
+    transition: 0.3s;
 }
 
-footer img:hover {
-    transform: scale(1.2);
-    filter: brightness(1.2);
+.footer_links i:hover {
+    color: #ffda77;
 }
+
+.footer_links h2 {
+    font-size: 25px;
+    color: #E6E6FA;
+}
+
+.footer_links h2:hover {
+    color: #ffda77;
+}
+
 
 /* === Responsive Design === */
 @media screen and (max-width: 768px) {
