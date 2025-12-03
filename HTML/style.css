@@ -50,39 +50,49 @@ p{
     align-items: center; 
 }
 
-button{
-    background-color: rgba(42, 63, 92, 0.3);
-    margin-top: 20px;
-    color: #E6E6FA;
-    font-size: 20px;  
-    border-radius: 10px;
-    border: 1px solid #E6E6FA;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button:hover{
-    background-color:#ffda77;
-    color:#1e1e2f;
-    font-size: 20px;  
-    border-radius: 10px;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-}
-
-button::after{
-    display: block;
-    width: 0;
-    height: 2px;
-    background: #ffda77;
-    transition: width .3s;
-}
-button:hover::after{
+/* Links container */
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    gap: 15px;
+    margin: 30px auto;
     width: 100%;
-    transition: width .3s;
-    background: rgb(198, 78, 224);
+    padding: 10px 0;
 }
+
+/* General button styling (inherited from your design) */
+.links a{
+    text-decoration: none;
+}
+
+.links button {
+    background-color: #3a1c71;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    border: 1px solid #E6E6FA;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;   /* centers icon + text vertically */
+    justify-content: center;
+}
+
+/* Add spacing between icon and text */
+.links button i {
+    margin-right: 10px;
+}
+
+.links button:hover {
+    background-color: #ffda77;
+    color: #1e1e2f;
+    border: none;
+}
+
 
 /*footer_links code*/
 .footer_links {
